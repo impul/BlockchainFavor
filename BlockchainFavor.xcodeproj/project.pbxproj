@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		344A9FF0208B92B700972937 /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344A9FEF208B92B700972937 /* BlockchainFavor.swift */; };
 		344AA0A2208BAF0800972937 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AA0A1208BAF0800972937 /* Crypto.framework */; };
+		344AA0A9208BBC7400972937 /* BFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA0A8208BBC7400972937 /* BFConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		344A9FEF208B92B700972937 /* BlockchainFavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFavor.swift; sourceTree = "<group>"; };
 		344AA0A1208BAF0800972937 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = "<group>"; };
 		344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlockchainFavor-Bridging-Header.h"; sourceTree = "<group>"; };
+		344AA0A8208BBC7400972937 /* BFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 		344A9FEE208B92B700972937 /* BlockchainFavor */ = {
 			isa = PBXGroup;
 			children = (
-				344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */,
+				344AA0AA208BBECF00972937 /* Config */,
 				344A9FEF208B92B700972937 /* BlockchainFavor.swift */,
 			);
 			path = BlockchainFavor;
@@ -72,6 +74,7 @@
 		344AA044208B9D2B00972937 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */,
 				344AA0A1208BAF0800972937 /* Crypto.framework */,
 			);
 			path = Crypto;
@@ -82,6 +85,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344AA0AA208BBECF00972937 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				344AA0A8208BBC7400972937 /* BFConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				344A9FF0208B92B700972937 /* BlockchainFavor.swift in Sources */,
+				344AA0A9208BBC7400972937 /* BFConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +298,7 @@
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BlockchainFavor/BlockchainFavor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crypto/BlockchainFavor-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +329,7 @@
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BlockchainFavor/BlockchainFavor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crypto/BlockchainFavor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";

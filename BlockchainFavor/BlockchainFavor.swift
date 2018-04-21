@@ -8,7 +8,9 @@
 
 import Crypto
 
-class BlockchainFavor {
-    var ops = HashAES()
-
+public class BlockchainFavor {
+    
+    init(config:BFConfig = BFConfig.defaultConfig) {
+        
+    }
 }
