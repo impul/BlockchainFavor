@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		344A9FF0208B92B700972937 /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344A9FEF208B92B700972937 /* BlockchainFavor.swift */; };
+		344AA0A2208BAF0800972937 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AA0A1208BAF0800972937 /* Crypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		344A9FEC208B92B700972937 /* libBlockchainFavor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBlockchainFavor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		344A9FEF208B92B700972937 /* BlockchainFavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFavor.swift; sourceTree = "<group>"; };
+		344AA0A1208BAF0800972937 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = "<group>"; };
+		344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlockchainFavor-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344AA0A2208BAF0800972937 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +46,9 @@
 			isa = PBXGroup;
 			children = (
 				344A9FEE208B92B700972937 /* BlockchainFavor */,
+				344AA044208B9D2B00972937 /* Crypto */,
 				344A9FED208B92B700972937 /* Products */,
+				344AA050208BA5A500972937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +63,25 @@
 		344A9FEE208B92B700972937 /* BlockchainFavor */ = {
 			isa = PBXGroup;
 			children = (
+				344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */,
 				344A9FEF208B92B700972937 /* BlockchainFavor.swift */,
 			);
 			path = BlockchainFavor;
+			sourceTree = "<group>";
+		};
+		344AA044208B9D2B00972937 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				344AA0A1208BAF0800972937 /* Crypto.framework */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		344AA050208BA5A500972937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +116,7 @@
 				TargetAttributes = {
 					344A9FEB208B92B700972937 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -243,26 +266,61 @@
 		344A9FF4208B92B700972937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X24R65DM8E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crypto",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crypto",
+				);
 				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockchainFavor/BlockchainFavor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		344A9FF5208B92B700972937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X24R65DM8E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crypto",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crypto",
+				);
 				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockchainFavor/BlockchainFavor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

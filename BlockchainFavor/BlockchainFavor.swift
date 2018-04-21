@@ -6,6 +6,9 @@
 //  Copyright © 2018 Pavlo Boiko. All rights reserved.
 //
 
+import Crypto
+
 class BlockchainFavor {
+    var ops = HashAES()
 
 }
