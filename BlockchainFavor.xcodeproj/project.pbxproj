@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		344A9FF0208B92B700972937 /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344A9FEF208B92B700972937 /* BlockchainFavor.swift */; };
 		344AA0A2208BAF0800972937 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AA0A1208BAF0800972937 /* Crypto.framework */; };
-		344AA0A9208BBC7400972937 /* BFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA0A8208BBC7400972937 /* BFConfig.swift */; };
+		344AA0A9208BBC7400972937 /* ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA0A8208BBC7400972937 /* ClientConfig.swift */; };
+		34571E9B208BFAB0007A101D /* PoolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34571E9A208BFAB0007A101D /* PoolConfig.swift */; };
+		34571E9D208BFDB3007A101D /* BFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34571E9C208BFDB3007A101D /* BFConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +31,9 @@
 		344A9FEF208B92B700972937 /* BlockchainFavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFavor.swift; sourceTree = "<group>"; };
 		344AA0A1208BAF0800972937 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = "<group>"; };
 		344AA0A7208BB15800972937 /* BlockchainFavor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlockchainFavor-Bridging-Header.h"; sourceTree = "<group>"; };
-		344AA0A8208BBC7400972937 /* BFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFConfig.swift; sourceTree = "<group>"; };
+		344AA0A8208BBC7400972937 /* ClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConfig.swift; sourceTree = "<group>"; };
+		34571E9A208BFAB0007A101D /* PoolConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolConfig.swift; sourceTree = "<group>"; };
+		34571E9C208BFDB3007A101D /* BFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,7 @@
 		344A9FEE208B92B700972937 /* BlockchainFavor */ = {
 			isa = PBXGroup;
 			children = (
-				344AA0AA208BBECF00972937 /* Config */,
+				344AA0AA208BBECF00972937 /* Configs */,
 				344A9FEF208B92B700972937 /* BlockchainFavor.swift */,
 			);
 			path = BlockchainFavor;
@@ -87,12 +91,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		344AA0AA208BBECF00972937 /* Config */ = {
+		344AA0AA208BBECF00972937 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				344AA0A8208BBC7400972937 /* BFConfig.swift */,
+				344AA0A8208BBC7400972937 /* ClientConfig.swift */,
+				34571E9A208BFAB0007A101D /* PoolConfig.swift */,
+				34571E9C208BFDB3007A101D /* BFConfig.swift */,
 			);
-			path = Config;
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				344A9FF0208B92B700972937 /* BlockchainFavor.swift in Sources */,
-				344AA0A9208BBC7400972937 /* BFConfig.swift in Sources */,
+				344AA0A9208BBC7400972937 /* ClientConfig.swift in Sources */,
+				34571E9B208BFAB0007A101D /* PoolConfig.swift in Sources */,
+				34571E9D208BFDB3007A101D /* BFConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

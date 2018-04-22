@@ -10,7 +10,11 @@ import Crypto
 
 public class BlockchainFavor {
     
-    init(config:BFConfig = BFConfig.defaultConfig) {
+    static func start() {
+        
+    }
+    
+    static func stop() {
         
     }
 }
