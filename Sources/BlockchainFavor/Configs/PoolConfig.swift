@@ -11,8 +11,8 @@ import Foundation
 public struct PoolConfig {
     static let defaultConfig = PoolConfig(name: "SupportXMR",
                                        address: "pool.supportxmr.com",
-                                          port: "5555")
+                                          port: 5555)
     let name:String
     let address:String
-    let port:String
+    let port:Int
 }

@@ -10,11 +10,11 @@ import Crypto
 
 public class BlockchainFavor {
     
-    static func start() {
+    public func startCalculating() {
         
     }
     
-    static func stop() {
+    public func endCalculating() {
         
     }
 }

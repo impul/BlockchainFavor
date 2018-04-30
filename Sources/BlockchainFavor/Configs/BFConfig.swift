@@ -19,4 +19,16 @@ class BFConfig {
         BFConfig.pool = poolConfig
     }
     
+    static func requestURL() throws -> URL {
+        var components = URLComponents()
+        components.scheme = "stratum+tcp"
+        components.user = client.wallet
+        components.password = client.workerID
+        components.host = pool.address
+        components.port = pool.port
+        guard let url = components.url else {
+            throw NSError(domain: "Can not create url request", code: 400, userInfo: nil)
+        }
+        return url
+    }
 }
