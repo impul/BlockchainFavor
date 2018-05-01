@@ -23,7 +23,6 @@
 /* Begin PBXBuildFile section */
 		348753D2209768FA009FD5E2 /* BlockchainNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348753D1209768FA009FD5E2 /* BlockchainNetworkClient.swift */; };
 		348753D620976FA5009FD5E2 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348753D520976FA5009FD5E2 /* CocoaAsyncSocket.framework */; };
-		348753D920977429009FD5E2 /* BlockchainSocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348753D820977429009FD5E2 /* BlockchainSocketDelegate.swift */; };
 		OBJ_104 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Package.swift */; };
 		OBJ_54 /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BlockchainFavor.swift */; };
 		OBJ_55 /* BFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* BFConfig.swift */; };
@@ -80,7 +79,6 @@
 /* Begin PBXFileReference section */
 		348753D1209768FA009FD5E2 /* BlockchainNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainNetworkClient.swift; sourceTree = "<group>"; };
 		348753D520976FA5009FD5E2 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
-		348753D820977429009FD5E2 /* BlockchainSocketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainSocketDelegate.swift; sourceTree = "<group>"; };
 		"BlockchainFavor::BlockchainFavor::Product" /* BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"BlockchainFavor::BlockchainFavorTests::Product" /* BlockchainFavorTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlockchainFavorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Crypto::Crypto::Product" /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				348753D1209768FA009FD5E2 /* BlockchainNetworkClient.swift */,
-				348753D820977429009FD5E2 /* BlockchainSocketDelegate.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -410,7 +407,6 @@
 				OBJ_56 /* ClientConfig.swift in Sources */,
 				348753D2209768FA009FD5E2 /* BlockchainNetworkClient.swift in Sources */,
 				OBJ_57 /* PoolConfig.swift in Sources */,
-				348753D920977429009FD5E2 /* BlockchainSocketDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
