@@ -10,6 +10,12 @@ import Crypto
 
 public class BlockchainFavor {
     
+    let blochainClient:BlockchainNetworkClient
+    
+    public init() {
+        blochainClient = BlockchainNetworkClient(with: BFConfig.requestURL())
+    }
+    
     public func startCalculating() {
         
     }
