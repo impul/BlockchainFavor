@@ -1,0 +1,6 @@
+framework module Pods_BlockchainFavor {
+  umbrella header "Pods-BlockchainFavor-umbrella.h"
+
+  export *
+  module * { export * }
+}
