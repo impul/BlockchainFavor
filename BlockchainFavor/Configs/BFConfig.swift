@@ -8,18 +8,18 @@
 
 import Foundation
 
-class BFConfig {
+public class BFConfig {
     
-    static var client:ClientConfig = .defaultConfig
-    static var pool:PoolConfig = .defaultConfig
+    public static var client:ClientConfig = .defaultConfig
+    public static var pool:PoolConfig = .defaultConfig
     
     @discardableResult
-    public init(clientConfig:ClientConfig,poolConfig:PoolConfig = .defaultConfig) {
+    public init(clientConfig:ClientConfig,poolConfig:PoolConfig) {
         BFConfig.client = clientConfig
         BFConfig.pool = poolConfig
     }
     
-    static func requestURL() -> URL {
+    public static func requestURL() -> URL {
         var components = URLComponents()
         components.scheme = "stratum+tcp"
         components.user = client.wallet

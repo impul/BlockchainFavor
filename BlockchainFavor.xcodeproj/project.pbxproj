@@ -36,8 +36,39 @@
 		34036F5C20A8F21300A4EF8A /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 34036F4520A8F21300A4EF8A /* keccak.c */; };
 		34036F5D20A8F21300A4EF8A /* oaes_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 34036F4620A8F21300A4EF8A /* oaes_lib.c */; };
 		34036F5E20A8F21300A4EF8A /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 34036F4720A8F21300A4EF8A /* skein.c */; };
+		34036F6620A8F28C00A4EF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34036F6520A8F28C00A4EF8A /* AppDelegate.swift */; };
+		34036F6820A8F28C00A4EF8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34036F6720A8F28C00A4EF8A /* ViewController.swift */; };
+		34036F6B20A8F28C00A4EF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6920A8F28C00A4EF8A /* Main.storyboard */; };
+		34036F6D20A8F28E00A4EF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6C20A8F28E00A4EF8A /* Assets.xcassets */; };
+		34036F7020A8F28E00A4EF8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6E20A8F28E00A4EF8A /* LaunchScreen.storyboard */; };
+		34036F7520A8F29500A4EF8A /* BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */; };
+		34036F7620A8F29500A4EF8A /* BlockchainFavor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBE60405C93BE185995E0546 /* Pods_BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34036F7720A8F29500A4EF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34036F0E20A8F13100A4EF8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34036F1620A8F13100A4EF8A;
+			remoteInfo = BlockchainFavor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34036F7920A8F29500A4EF8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34036F7620A8F29500A4EF8A /* BlockchainFavor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +102,13 @@
 		34036F4520A8F21300A4EF8A /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
 		34036F4620A8F21300A4EF8A /* oaes_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oaes_lib.c; sourceTree = "<group>"; };
 		34036F4720A8F21300A4EF8A /* skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
+		34036F6320A8F28C00A4EF8A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34036F6520A8F28C00A4EF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34036F6720A8F28C00A4EF8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34036F6A20A8F28C00A4EF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34036F6C20A8F28E00A4EF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34036F6F20A8F28E00A4EF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34036F7120A8F28E00A4EF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B515E2626017F55C95D5DA5 /* Pods-BlockchainFavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.release.xcconfig"; sourceTree = "<group>"; };
 		B5616A287E4C9CA34EFF8C7D /* Pods-BlockchainFavor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +123,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34036F6020A8F28C00A4EF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34036F7520A8F29500A4EF8A /* BlockchainFavor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				34036F1920A8F13100A4EF8A /* BlockchainFavor */,
+				34036F6420A8F28C00A4EF8A /* Example */,
 				34036F1820A8F13100A4EF8A /* Products */,
 				EAAD57A302335F00B286C286 /* Pods */,
 				CDF3A77988A050301806E1D5 /* Frameworks */,
@@ -102,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */,
+				34036F6320A8F28C00A4EF8A /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +223,19 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		34036F6420A8F28C00A4EF8A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				34036F6520A8F28C00A4EF8A /* AppDelegate.swift */,
+				34036F6720A8F28C00A4EF8A /* ViewController.swift */,
+				34036F6920A8F28C00A4EF8A /* Main.storyboard */,
+				34036F6C20A8F28E00A4EF8A /* Assets.xcassets */,
+				34036F6E20A8F28E00A4EF8A /* LaunchScreen.storyboard */,
+				34036F7120A8F28E00A4EF8A /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		CDF3A77988A050301806E1D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,18 +299,41 @@
 			productReference = 34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		34036F6220A8F28C00A4EF8A /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34036F7420A8F28E00A4EF8A /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				34036F5F20A8F28C00A4EF8A /* Sources */,
+				34036F6020A8F28C00A4EF8A /* Frameworks */,
+				34036F6120A8F28C00A4EF8A /* Resources */,
+				34036F7920A8F29500A4EF8A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34036F7820A8F29500A4EF8A /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 34036F6320A8F28C00A4EF8A /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		34036F0E20A8F13100A4EF8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Pavlo Boiko";
 				TargetAttributes = {
 					34036F1620A8F13100A4EF8A = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+					};
+					34036F6220A8F28C00A4EF8A = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -259,6 +343,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 34036F0D20A8F13100A4EF8A;
 			productRefGroup = 34036F1820A8F13100A4EF8A /* Products */;
@@ -266,6 +351,7 @@
 			projectRoot = "";
 			targets = (
 				34036F1620A8F13100A4EF8A /* BlockchainFavor */,
+				34036F6220A8F28C00A4EF8A /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				34036F5A20A8F21300A4EF8A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34036F6120A8F28C00A4EF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34036F7020A8F28E00A4EF8A /* LaunchScreen.storyboard in Resources */,
+				34036F6D20A8F28E00A4EF8A /* Assets.xcassets in Resources */,
+				34036F6B20A8F28C00A4EF8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +420,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34036F5F20A8F28C00A4EF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34036F6820A8F28C00A4EF8A /* ViewController.swift in Sources */,
+				34036F6620A8F28C00A4EF8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34036F7820A8F29500A4EF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34036F1620A8F13100A4EF8A /* BlockchainFavor */;
+			targetProxy = 34036F7720A8F29500A4EF8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34036F6920A8F28C00A4EF8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34036F6A20A8F28C00A4EF8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34036F6E20A8F28E00A4EF8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34036F6F20A8F28E00A4EF8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		34036F1D20A8F13100A4EF8A /* Debug */ = {
@@ -461,7 +593,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BlockchainFavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.BlockchainFavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -485,10 +621,52 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BlockchainFavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.BlockchainFavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34036F7220A8F28E00A4EF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34036F7320A8F28E00A4EF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -511,6 +689,15 @@
 			buildConfigurations = (
 				34036F2020A8F13100A4EF8A /* Debug */,
 				34036F2120A8F13100A4EF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34036F7420A8F28E00A4EF8A /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34036F7220A8F28E00A4EF8A /* Debug */,
+				34036F7320A8F28E00A4EF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
