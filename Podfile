@@ -10,5 +10,8 @@ target 'BlockchainFavor' do
   pod 'ObjectMapper'
 
   # Pods for BlockchainFavor
+  target 'Example' do
+      inherit! :search_paths
+  end
 
 end

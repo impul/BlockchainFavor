@@ -10,13 +10,15 @@ import UIKit
 import BlockchainFavor
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, BlockchainFavorDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        let favor = BlockchainFavor(destinationAddress: "44e9qpGrCfEVNW3qDWEctTJimbnjNv7PX1xKkT1Sh6yQHXTQACu7fQZVC8MChMTobeJrpXDdwQdB9KL9aywqfwyfT3pWSPT")
+        favor.delegate = self
+        try! favor.start()
         return true
     }
 
@@ -42,6 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    //MARK: - BlockchainFavorDelegate
+    
+    func blockchainFavor(updatedStats stats: BlockchainFavorStats) {
+        print(stats)
+    }
+    
 }
 
