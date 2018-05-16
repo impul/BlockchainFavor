@@ -62,6 +62,7 @@ final class Client {
     // MARK: Jobs
     
     func submitJob(id: String, jobID: String, result: Data, nonce: Job.Nonce) throws {
+        print("Socket submit job")
         var nonceData = Data(count:  MemoryLayout<Job.Nonce>.size)
         nonceData.withUnsafeMutableBytes { (ptr: UnsafeMutablePointer<Job.Nonce>) -> Void in
             ptr.pointee = nonce
@@ -78,6 +79,7 @@ final class Client {
 
 extension Client {
     fileprivate func login() throws {
+        
         try send(method: "login", id: 1, params: [
             "login": url.user ?? "",
             "pass": url.password ?? ""
@@ -85,6 +87,8 @@ extension Client {
     }
     
     private func send(method: String, id: Int, params: Any) throws {
+        print("Socket send data")
+        print(params)
         let message = RPCRequest(method: method, id: id, params: params)
         guard let json = Mapper().toJSONString(message), let jsonData = json.data(using: .utf8) else {
             throw CalculatingError.commandSerializationFailed
@@ -94,6 +98,7 @@ extension Client {
     }
     
     fileprivate func receive() {
+        print("Socket recive something")
         socket.readData(to: Client.Constants.terminator, withTimeout: -1, tag: Client.Constants.Tags.readJSON)
     }
 }
@@ -101,9 +106,11 @@ extension Client {
 extension Client {
     fileprivate func socketConnected() {
         try! login()
+        print("Socket login")
     }
     
     fileprivate func didReceive(response: Data) {
+        print("Socket did recive data")
         guard let json = (try? JSONSerialization.jsonObject(with: response, options: [])) as? [String : Any] else {
             return
         }
@@ -148,6 +155,7 @@ extension Client {
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         switch tag {
         case Client.Constants.Tags.readJSON:
+            print("Socket read data")
             client?.didReceive(response: data)
             client?.receive()
         default:

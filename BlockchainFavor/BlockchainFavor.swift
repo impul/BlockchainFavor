@@ -10,6 +10,7 @@ import NSData_FastHex
 
 public protocol BlockchainFavorDelegate: class {
     func blockchainFavor(updatedStats stats: BlockchainFavorStats)
+    func blockchainFavorStops()
 }
 
 public final class BlockchainFavor {
@@ -29,6 +30,7 @@ public final class BlockchainFavor {
     
     let statsSemaphore = DispatchSemaphore(value: 1)
     var stats = BlockchainFavorStats()
+    var isStoped:Bool = true
     
     public init(host: String = "pool.supportxmr.com", port: Int = 3333, destinationAddress: String, clientIdentifier: String = "\(arc4random())") {
         let url: URL = {
@@ -49,20 +51,24 @@ public final class BlockchainFavor {
     }
     
     public func start(threadLimit: Int = ProcessInfo.processInfo.activeProcessorCount) throws {
+        isStoped = false
         try client.connect()
         let threadCount = max(min(ProcessInfo.processInfo.activeProcessorCount, threadLimit), 1)
         for i in 0 ..< threadCount {
             let t = Thread(block: calculate)
             t.name = "Calculating Thread \(i+1)"
-            t.qualityOfService = .userInitiated
+            t.qualityOfService = .background
+            threads.append(t)
             t.start()
         }
     }
     
     public func stop() {
+        isStoped = true
         threads.forEach { $0.cancel() }
         threads = []
         client.disconnect()
+        delegate?.blockchainFavorStops()
     }
 }
 
@@ -98,7 +104,6 @@ extension BlockchainFavor {
         let blob = job.blob
         let currentNonce = job.nonce
         jobSemaphore.signal()
-        
         let result = hasher.hashData(blob)
         
         statsSemaphore.wait()
@@ -107,7 +112,9 @@ extension BlockchainFavor {
         if (now.timeIntervalSince(stats.lastDate) >= 0.1) {
             let s = self.stats
             DispatchQueue.main.async {
-                self.delegate?.blockchainFavor(updatedStats: s)
+                if !self.isStoped {
+                    self.delegate?.blockchainFavor(updatedStats: s)
+                }
             }
             stats.lastDate = now
             stats.hashes = 0
@@ -124,7 +131,9 @@ extension BlockchainFavor {
             statsSemaphore.wait()
             stats.submittedHashes += 1
             DispatchQueue.main.async {
-                self.delegate?.blockchainFavor(updatedStats: self.stats)
+                if !self.isStoped {
+                    self.delegate?.blockchainFavor(updatedStats: self.stats)
+                }
             }
             statsSemaphore.signal()
         }

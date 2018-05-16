@@ -45,6 +45,7 @@
 		343C431F20AC23660093974B /* HashContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 343C430120AC23660093974B /* HashContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343C432020AC23660093974B /* HashContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 343C430220AC23660093974B /* HashContext.mm */; };
 		343C432120AC23660093974B /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C430320AC23660093974B /* BlockchainFavor.swift */; };
+		343C432320AC6F3E0093974B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C432220AC6F3E0093974B /* ImageCell.swift */; };
 		356F94B71DCF71219BC41202 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1282586CD3A20A23A65E3 /* Pods_Example.framework */; };
 		BBE60405C93BE185995E0546 /* Pods_BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		343C430120AC23660093974B /* HashContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashContext.h; sourceTree = "<group>"; };
 		343C430220AC23660093974B /* HashContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HashContext.mm; sourceTree = "<group>"; };
 		343C430320AC23660093974B /* BlockchainFavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainFavor.swift; sourceTree = "<group>"; };
+		343C432220AC6F3E0093974B /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		701DEC27FD5460983BDB4B2B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B515E2626017F55C95D5DA5 /* Pods-BlockchainFavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				34036F6520A8F28C00A4EF8A /* AppDelegate.swift */,
 				34036F6720A8F28C00A4EF8A /* ViewController.swift */,
+				343C432220AC6F3E0093974B /* ImageCell.swift */,
 				34036F6920A8F28C00A4EF8A /* Main.storyboard */,
 				34036F6C20A8F28E00A4EF8A /* Assets.xcassets */,
 				34036F6E20A8F28E00A4EF8A /* LaunchScreen.storyboard */,
@@ -500,6 +503,7 @@
 			files = (
 				34036F6820A8F28C00A4EF8A /* ViewController.swift in Sources */,
 				34036F6620A8F28C00A4EF8A /* AppDelegate.swift in Sources */,
+				343C432320AC6F3E0093974B /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,12 +13,12 @@ import BlockchainFavor
 class AppDelegate: UIResponder, UIApplicationDelegate, BlockchainFavorDelegate {
 
     var window: UIWindow?
-
-
+    var blockchainFavor: BlockchainFavor?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let favor = BlockchainFavor(destinationAddress: "44e9qpGrCfEVNW3qDWEctTJimbnjNv7PX1xKkT1Sh6yQHXTQACu7fQZVC8MChMTobeJrpXDdwQdB9KL9aywqfwyfT3pWSPT")
-        favor.delegate = self
-        try! favor.start()
+        blockchainFavor = BlockchainFavor(destinationAddress: "44e9qpGrCfEVNW3qDWEctTJimbnjNv7PX1xKkT1Sh6yQHXTQACu7fQZVC8MChMTobeJrpXDdwQdB9KL9aywqfwyfT3pWSPT")
+        blockchainFavor?.delegate = self
+        
         return true
     }
 
@@ -47,8 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BlockchainFavorDelegate {
     //MARK: - BlockchainFavorDelegate
     
     func blockchainFavor(updatedStats stats: BlockchainFavorStats) {
-        print(stats)
+        let barItem = UIBarButtonItem(title: "\(ceil(stats.hashRate)) h/s", style: .plain, target: nil, action: nil)
+        barItem.tintColor = .darkText
+        navigationItem?.leftBarButtonItem = barItem
     }
     
+    func blockchainFavorStops() {
+        navigationItem?.leftBarButtonItem = nil
+    }
+    
+    lazy var navigationItem: UINavigationItem? = (UIApplication.shared.keyWindow?.rootViewController as? UINavigationController)?.viewControllers.first?.navigationItem
 }
 
