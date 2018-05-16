@@ -9,7 +9,7 @@
  */
 
 #include <stdint.h>
-#include "include/groestl_tables.h"
+#include "groestl_tables.h"
 
 typedef unsigned char BitSequence;
 typedef unsigned long long DataLength;

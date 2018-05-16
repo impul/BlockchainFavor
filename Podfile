@@ -6,6 +6,8 @@ target 'BlockchainFavor' do
   use_frameworks!
 
   pod 'CocoaAsyncSocket'
+  pod 'NSData+FastHex'
+  pod 'ObjectMapper'
 
   # Pods for BlockchainFavor
 

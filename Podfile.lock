@@ -1,16 +1,24 @@
 PODS:
   - CocoaAsyncSocket (7.6.3)
+  - "NSData+FastHex (1.0.1)"
+  - ObjectMapper (3.1.0)
 
 DEPENDENCIES:
   - CocoaAsyncSocket
+  - "NSData+FastHex"
+  - ObjectMapper
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CocoaAsyncSocket
+    - "NSData+FastHex"
+    - ObjectMapper
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  "NSData+FastHex": a22ad031ee10a4297d0bf4d20cf03406a4476169
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
 
-PODFILE CHECKSUM: 2f33d1560c5329b03d120fb10bd674419a6ea053
+PODFILE CHECKSUM: 10d9c33e57c1f695fc3f8b90018f701e2a9117cd
 
 COCOAPODS: 1.5.0

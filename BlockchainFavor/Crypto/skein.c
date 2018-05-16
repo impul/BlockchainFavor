@@ -12,7 +12,7 @@
 
 #include <stddef.h>                          /* get size_t definition */
 #include <string.h>      /* get the memcpy/memset functions */
-#include "include/skein_port.h"
+#include "skein_port.h"
 
 typedef enum
 {

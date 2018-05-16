@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include "include/keccak.h"
-#include "include/blake.h"
-#include "include/skein.h"
-#include "include/jh.h"
-#include "include/groestl.h"
-#include "include/cryptonight.h"
-#include "include/aesb.h"
+#include "keccak.h"
+#include "blake.h"
+#include "skein.h"
+#include "jh/jh.h"
+#include "groestl.h"
+#include "cryptonight.h"
+#include "aesb.h"
 
 void do_blake_hash(const void* input, size_t len, char* output) {
     blake(input, len, (unsigned char *)output);

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HashContext.h"
 
 //! Project version number for BlockchainFavor.
 FOUNDATION_EXPORT double BlockchainFavorVersionNumber;
