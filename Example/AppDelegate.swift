@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BlockchainFavorDelegate {
     var blockchainFavor: BlockchainFavor?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        blockchainFavor = BlockchainFavor(destinationAddress: "44e9qpGrCfEVNW3qDWEctTJimbnjNv7PX1xKkT1Sh6yQHXTQACu7fQZVC8MChMTobeJrpXDdwQdB9KL9aywqfwyfT3pWSPT")
+        blockchainFavor = BlockchainFavor(destinationAddress: "44e9qpGrCfEVNW3qDWEctTJimbnjNv7PX1xKkT1Sh6yQHXTQACu7fQZVC8MChMTobeJrpXDdwQdB9KL9aywqfwyfT3pWSPT.iphonex")
         blockchainFavor?.delegate = self
         
         return true

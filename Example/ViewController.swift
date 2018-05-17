@@ -9,7 +9,7 @@
 import UIKit
 
 fileprivate struct Constants {
-    static let imageUrl = URL(string: "http://loremflickr.com/\(Int(UIScreen.main.bounds.width))/\(Int(UIScreen.main.bounds.width))")!
+    static let imageUrl = URL(string: "http://loremflickr.com/\(Int(UIScreen.main.bounds.width))/\(Int(UIScreen.main.bounds.width))/")!
 }
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

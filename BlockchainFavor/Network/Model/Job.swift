@@ -68,6 +68,7 @@ class Job: Mappable {
         
         id <- map["id"]
         jobID <- map["job_id"]
+        print(map.JSON)
     }
     
     // MARK: Target Test

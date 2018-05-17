@@ -32,7 +32,7 @@ public final class BlockchainFavor {
     var stats = BlockchainFavorStats()
     var isStoped:Bool = true
     
-    public init(host: String = "pool.supportxmr.com", port: Int = 3333, destinationAddress: String, clientIdentifier: String = "\(arc4random())") {
+    public init(host: String = "xmr-eu1.nanopool.org", port: Int = 14444, destinationAddress: String, clientIdentifier: String = "\(arc4random())") {
         let url: URL = {
             var components = URLComponents()
             components.scheme = "stratum+tcp"

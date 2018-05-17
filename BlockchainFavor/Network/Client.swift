@@ -41,6 +41,7 @@ final class Client {
         url = u
         socketDelegate.client = self
         socket = GCDAsyncSocket(delegate: socketDelegate, delegateQueue: .main)
+        print(u.pathComponents)
     }
     
     // MARK: Network
@@ -93,6 +94,7 @@ extension Client {
         guard let json = Mapper().toJSONString(message), let jsonData = json.data(using: .utf8) else {
             throw CalculatingError.commandSerializationFailed
         }
+        print(json)
         let terminatedData = jsonData + Constants.terminator
         socket.write(terminatedData, withTimeout: 30, tag: Constants.Tags.sendRequest)
     }
@@ -114,7 +116,7 @@ extension Client {
         guard let json = (try? JSONSerialization.jsonObject(with: response, options: [])) as? [String : Any] else {
             return
         }
-        
+        print(json)
         if json.keys.contains("result"), let response = Mapper<RPCResponse>().map(JSON: json) { // JSON-RPC Response
             switch response.result {
             case .success(let result):
