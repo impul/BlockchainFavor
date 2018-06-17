@@ -1,6 +1,6 @@
 //
 //  CalculatingError.swift
-//  Pods
+//  BlockchainFavor
 //
 //  Created by Pavlo Boiko on 4/18/18.
 //

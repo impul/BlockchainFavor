@@ -1,6 +1,6 @@
 //
 //  RPCRequest.swift
-//  CocoaAsyncSocket
+//  BlockchainFavor
 //
 //  Created by Pavlo Boiko on 5/918.
 //

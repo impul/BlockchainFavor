@@ -46,6 +46,8 @@
 		343C432020AC23660093974B /* HashContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 343C430220AC23660093974B /* HashContext.mm */; };
 		343C432120AC23660093974B /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C430320AC23660093974B /* BlockchainFavor.swift */; };
 		343C432320AC6F3E0093974B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C432220AC6F3E0093974B /* ImageCell.swift */; };
+		346767D620D336AA00DB0F24 /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346767D520D336AA00DB0F24 /* ConsoleViewController.swift */; };
+		346767D920D3380C00DB0F24 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346767D820D3380C00DB0F24 /* Logger.swift */; };
 		356F94B71DCF71219BC41202 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1282586CD3A20A23A65E3 /* Pods_Example.framework */; };
 		BBE60405C93BE185995E0546 /* Pods_BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +119,8 @@
 		343C430220AC23660093974B /* HashContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HashContext.mm; sourceTree = "<group>"; };
 		343C430320AC23660093974B /* BlockchainFavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainFavor.swift; sourceTree = "<group>"; };
 		343C432220AC6F3E0093974B /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		346767D520D336AA00DB0F24 /* ConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		346767D820D3380C00DB0F24 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		701DEC27FD5460983BDB4B2B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B515E2626017F55C95D5DA5 /* Pods-BlockchainFavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		34036F1920A8F13100A4EF8A /* BlockchainFavor */ = {
 			isa = PBXGroup;
 			children = (
+				346767D720D3380300DB0F24 /* Helpers */,
 				343C42E120AC23660093974B /* Crypto */,
 				343C430020AC23660093974B /* Hashing */,
 				343C430320AC23660093974B /* BlockchainFavor.swift */,
@@ -185,6 +190,7 @@
 			children = (
 				34036F6520A8F28C00A4EF8A /* AppDelegate.swift */,
 				34036F6720A8F28C00A4EF8A /* ViewController.swift */,
+				346767D520D336AA00DB0F24 /* ConsoleViewController.swift */,
 				343C432220AC6F3E0093974B /* ImageCell.swift */,
 				34036F6920A8F28C00A4EF8A /* Main.storyboard */,
 				34036F6C20A8F28E00A4EF8A /* Assets.xcassets */,
@@ -264,6 +270,14 @@
 				343C430220AC23660093974B /* HashContext.mm */,
 			);
 			path = Hashing;
+			sourceTree = "<group>";
+		};
+		346767D720D3380300DB0F24 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				346767D820D3380C00DB0F24 /* Logger.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CDF3A77988A050301806E1D5 /* Frameworks */ = {
@@ -476,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346767D920D3380C00DB0F24 /* Logger.swift in Sources */,
 				343C431E20AC23660093974B /* RPCResponse.swift in Sources */,
 				343C430720AC23660093974B /* blake.c in Sources */,
 				343C431320AC23660093974B /* oaes_lib.c in Sources */,
@@ -501,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346767D620D336AA00DB0F24 /* ConsoleViewController.swift in Sources */,
 				34036F6820A8F28C00A4EF8A /* ViewController.swift in Sources */,
 				34036F6620A8F28C00A4EF8A /* AppDelegate.swift in Sources */,
 				343C432320AC6F3E0093974B /* ImageCell.swift in Sources */,
@@ -672,7 +688,11 @@
 				INFOPLIST_FILE = BlockchainFavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.BlockchainFavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -697,7 +717,11 @@
 				INFOPLIST_FILE = BlockchainFavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.BlockchainFavor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -717,7 +741,10 @@
 				DEVELOPMENT_TEAM = X24R65DM8E;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -736,7 +763,10 @@
 				DEVELOPMENT_TEAM = X24R65DM8E;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

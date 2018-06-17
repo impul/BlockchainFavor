@@ -1,5 +1,6 @@
 //
 //  Client.swift
+//  BlockchainFavor
 //
 //  Created by Pavlo Boiko on 5/918.
 //
