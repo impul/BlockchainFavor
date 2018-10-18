@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EFCA7A11EB92108DCF7137B /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEB60821510C092F5D56DC /* Pods_Example.framework */; };
 		34036F1C20A8F13100A4EF8A /* BlockchainFavor.h in Headers */ = {isa = PBXBuildFile; fileRef = 34036F1A20A8F13100A4EF8A /* BlockchainFavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34036F2920A8F1DA00A4EF8A /* BlockchainFavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34036F2220A8F1DA00A4EF8A /* BlockchainFavor.swift */; };
 		34036F2A20A8F1DA00A4EF8A /* BFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34036F2420A8F1DA00A4EF8A /* BFConfig.swift */; };
@@ -41,20 +42,8 @@
 		34036F6B20A8F28C00A4EF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6920A8F28C00A4EF8A /* Main.storyboard */; };
 		34036F6D20A8F28E00A4EF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6C20A8F28E00A4EF8A /* Assets.xcassets */; };
 		34036F7020A8F28E00A4EF8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34036F6E20A8F28E00A4EF8A /* LaunchScreen.storyboard */; };
-		34036F7520A8F29500A4EF8A /* BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */; };
-		34036F7620A8F29500A4EF8A /* BlockchainFavor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBE60405C93BE185995E0546 /* Pods_BlockchainFavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		34036F7720A8F29500A4EF8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34036F0E20A8F13100A4EF8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34036F1620A8F13100A4EF8A;
-			remoteInfo = BlockchainFavor;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		34036F7920A8F29500A4EF8A /* Embed Frameworks */ = {
@@ -63,7 +52,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				34036F7620A8F29500A4EF8A /* BlockchainFavor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26AA7F8C9D6B1F62987992E3 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		34036F1720A8F13100A4EF8A /* BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34036F1A20A8F13100A4EF8A /* BlockchainFavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockchainFavor.h; sourceTree = "<group>"; };
 		34036F1B20A8F13100A4EF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +100,9 @@
 		34036F7120A8F28E00A4EF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockchainFavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B515E2626017F55C95D5DA5 /* Pods-BlockchainFavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.release.xcconfig"; sourceTree = "<group>"; };
+		9FEEB60821510C092F5D56DC /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5616A287E4C9CA34EFF8C7D /* Pods-BlockchainFavor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockchainFavor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockchainFavor/Pods-BlockchainFavor.debug.xcconfig"; sourceTree = "<group>"; };
+		F979EA977970F8919FEB3B0B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34036F7520A8F29500A4EF8A /* BlockchainFavor.framework in Frameworks */,
+				0EFCA7A11EB92108DCF7137B /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				7C3424FF8A94C85B844B7E5B /* Pods_BlockchainFavor.framework */,
+				9FEEB60821510C092F5D56DC /* Pods_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,6 +241,8 @@
 			children = (
 				B5616A287E4C9CA34EFF8C7D /* Pods-BlockchainFavor.debug.xcconfig */,
 				8B515E2626017F55C95D5DA5 /* Pods-BlockchainFavor.release.xcconfig */,
+				F979EA977970F8919FEB3B0B /* Pods-Example.debug.xcconfig */,
+				26AA7F8C9D6B1F62987992E3 /* Pods-Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -303,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34036F7420A8F28E00A4EF8A /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				F460B87D320BE723ABC624E9 /* [CP] Check Pods Manifest.lock */,
 				34036F5F20A8F28C00A4EF8A /* Sources */,
 				34036F6020A8F28C00A4EF8A /* Frameworks */,
 				34036F6120A8F28C00A4EF8A /* Resources */,
@@ -311,7 +306,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				34036F7820A8F29500A4EF8A /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -396,6 +390,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F460B87D320BE723ABC624E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -430,14 +446,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		34036F7820A8F29500A4EF8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 34036F1620A8F13100A4EF8A /* BlockchainFavor */;
-			targetProxy = 34036F7720A8F29500A4EF8A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34036F6920A8F28C00A4EF8A /* Main.storyboard */ = {
@@ -636,6 +644,7 @@
 		};
 		34036F7220A8F28E00A4EF8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F979EA977970F8919FEB3B0B /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -655,6 +664,7 @@
 		};
 		34036F7320A8F28E00A4EF8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AA7F8C9D6B1F62987992E3 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

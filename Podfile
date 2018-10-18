@@ -9,4 +9,8 @@ target 'BlockchainFavor' do
 
   # Pods for BlockchainFavor
 
+  target 'Example' do
+      inherit! :search_paths
+  end
+
 end

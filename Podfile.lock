@@ -5,12 +5,12 @@ DEPENDENCIES:
   - CocoaAsyncSocket
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
 
-PODFILE CHECKSUM: 2f33d1560c5329b03d120fb10bd674419a6ea053
+PODFILE CHECKSUM: d101794c48392203f9a53e3c2bc1ebe703c163c7
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
